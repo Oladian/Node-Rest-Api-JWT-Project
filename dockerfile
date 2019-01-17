@@ -4,6 +4,8 @@ USER root
 
 RUN mkdir /home/node-rest-api-jwt
 
+WORKDIR /home/node-rest-api-jwt
+
 COPY . /home/node-rest-api-jwt
 
 RUN npm install bcryptjs body-parser express jsonwebtoken mongoose morgan --save
