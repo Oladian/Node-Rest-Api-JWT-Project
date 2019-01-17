@@ -15,3 +15,5 @@ RUN npm install nodemon -g
 EXPOSE 3000
 
 ENTRYPOINT["node", "server.js"]
+
+
