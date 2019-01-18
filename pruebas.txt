@@ -2,4 +2,6 @@ sudo docker build -f Dockerfile -t node-rest-jwt:api .
 
 sudo docker run -dti --name="server" -p "192.168.17.124:3000:3000" node-rest-jwt:api
 
+sudo docker start server
+
 sudo docker inspect server > inspect.txt

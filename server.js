@@ -1,6 +1,7 @@
 const express = require('express');
 const logger = require('morgan');
 const users = require('./routes/users');
+const events = require('./routes/events');
 const bodyParser = require('body-parser');
 const mongoose = require('./config/database'); //database configuration
 var jwt = require('jsonwebtoken');
@@ -22,7 +23,7 @@ res.json({"tutorial" : "Build REST API with node.js"});
 app.use('/users', users);
 
 // private route
-app.use('/movies', validateUser, movies);
+app.use('/events', validateUser, events);
 
 app.get('/favicon.ico', function(req, res) {
     res.sendStatus(204);
