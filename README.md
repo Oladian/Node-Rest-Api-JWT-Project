@@ -54,7 +54,7 @@ DELETE  /events/:eventId
 
 ## Construido con 
 
-* [MongoDB] (https://www.mongodb.com/es) 
-* [NPM] (https://www.npmjs.com/) 
-* [NODE.JS] (https://nodejs.org/es/) 
-* [JSON] (https://www.json.org/)
+* [MongoDB](https://www.mongodb.com/es) - Base de datos utilizada
+* [NPM](https://www.npmjs.com/) - Sistema de módulos
+* [NODE.JS](https://nodejs.org/es/) - Ejecución de Javascript
+* [JSON](https://www.json.org/) - Formato de datos para persistencia
