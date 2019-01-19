@@ -27,21 +27,34 @@ _Se necesitará MongoDB, Node.js y npm para poder ejecutar correctamente el serv
 ## Rutas de acceso a los datos
 
 _Rutas de usuarios_
-
+```
 POST    /users/register
+```
+```
 POST    /users/authenticate
+```
 
 _Rutas de eventos_
 
+```
 GET     /events/
+```
+```
 POST    /events/
+```
+```
 GET     /events/:eventId
+```
+```
 PUT     /events/:eventId
+```
+```
 DELETE  /events/:eventId
+```
 
 ## Construido con 
 
-* [MongoDB](https://www.mongodb.com/es) 
-* [NPM](https://www.npmjs.com/) 
-* [NODE.JS](https://nodejs.org/es/) 
+* [MongoDB] (https://www.mongodb.com/es) 
+* [NPM] (https://www.npmjs.com/) 
+* [NODE.JS] (https://nodejs.org/es/) 
 * [JSON] (https://www.json.org/)
