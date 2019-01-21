@@ -31,28 +31,28 @@ _Se necesitará MongoDB, Node.js y npm para poder ejecutar correctamente el serv
 
 _Rutas de usuarios_
 ```
-POST    /users/register
+POST    /users/register         Registra al usuario
 ```
 ```
-POST    /users/authenticate
+POST    /users/authenticate     Autentica al usuario para obtener el token
 ```
 
 _Rutas de eventos_
 
 ```
-GET     /events/
+GET     /events/            Obtiene todos los eventos
 ```
 ```
-POST    /events/
+POST    /events/            Añade un evento
 ```
 ```
-GET     /events/:eventId
+GET     /events/:eventId    Obtiene evento por su id
 ```
 ```
-PUT     /events/:eventId
+PUT     /events/:eventId    Actualiza evento por su id
 ```
 ```
-DELETE  /events/:eventId
+DELETE  /events/:eventId    Borra evento por su id
 ```
 
 ## Construido con 
