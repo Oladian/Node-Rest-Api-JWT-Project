@@ -40,7 +40,7 @@ getAll: function(req, res, next) {
     next(err);
    } else{
     for (let event of events) {
-      eventList.push({id: event._id, name: event.name, event_date: event.event_date});
+      eventList.push({id: event._id, name: event.name, event_date: event.event_date, place: event.place});
     }
     res.json({status:"success", message: "Events list found!!!", data:{events: eventList}});
        
@@ -91,7 +91,7 @@ deleteById: function(req, res, next) {
  },
 
 create: function(req, res, next) {
-  eventModel.create({ name: req.body.name, event_date: req.body.event_date }, function (err, result) {
+  eventModel.create({ name: req.body.name, event_date: req.body.event_date, place: req.body.place }, function (err, result) {
       if (err) 
        next(err);
       else
