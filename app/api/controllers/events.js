@@ -12,26 +12,6 @@ module.exports = {
   });
  },
 
-/*
-
- getByGenre: function(req, res, next) {
-  let eventList = [];
-
-  eventModel.find({event_date:req.body.event_date}, function(err, events){
-     if (err){
-      next(err);
-     } else{
-      for (let event of events) {
-        eventList.push({id: event._id, name: event.name, event_date: event.event_date});
-      }
-      res.json({status:"success", message: "Event list found!!!", data:{events: eventList}});
-         
-     }
-  });
- },
-
- */
-
 getAll: function(req, res, next) {
   let eventList = [];
 
@@ -49,26 +29,6 @@ getAll: function(req, res, next) {
 });
  },
 
- // Terminar db.movies.find({released_on:{$lt:"2018-08-10",$gt:"2017-12-17"}}).pretty()
-/*
- getAllBetweenDate: function(req, res, next) {
-  let eventList = [];
-
-  eventModel.find(req.params.date1, function(err, events){
-    if (err){
-      next(err);
-    } else{
-      for (let event of events) {
-        eventList.push({id: event._id, name: event.name, event_date: event.event_date});
-      }
-      res.json({status:"success", message: "Events list found!!!", data:{events: eventList}});
-        
-    }
-
-  });
- },
-*/
- 
 updateById: function(req, res, next) {
   eventModel.findByIdAndUpdate(req.params.eventId,{name:req.body.name}, function(err, eventInfo){
 
