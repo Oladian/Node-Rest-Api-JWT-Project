@@ -30,7 +30,7 @@ getAll: function(req, res, next) {
  },
 
 updateById: function(req, res, next) {
-  eventModel.findByIdAndUpdate(req.params.eventId,{name:req.body.name}, function(err, eventInfo){
+  eventModel.findByIdAndUpdate(req.params.eventId,{name: req.body.name, event_date: req.body.event_date, place: req.body.place}, function(err, eventInfo){
 
 if(err)
     next(err);
@@ -51,7 +51,7 @@ deleteById: function(req, res, next) {
  },
 
 create: function(req, res, next) {
-  eventModel.create({ name: req.body.name, event_date: req.body.event_date, place: req.body.place }, function (err, result) {
+  eventModel.create({ name: req.body.name, event_date: req.body.event_date, place: req.body.place, description: req.body.description}, function (err, result) {
       if (err) 
        next(err);
       else
