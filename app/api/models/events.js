@@ -17,7 +17,12 @@ const EventSchema = new Schema({
  place: {
      type: String,
      required: true
+ },
+ description: {
+     type: String,
+     required: false
  }
+
 },{versionKey:false});
 
 module.exports = mongoose.model('Event', EventSchema)
