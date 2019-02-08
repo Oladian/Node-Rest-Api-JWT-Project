@@ -20,7 +20,7 @@ getAll: function(req, res, next) {
     next(err);
    } else{
     for (let event of events) {
-      eventList.push({id: event._id, name: event.name, event_date: event.event_date, place: event.place});
+      eventList.push({id: event._id, name: event.name, event_date: event.event_date, place: event.place, description: event.description});
     }
     res.json({status:"success", message: "Events list found!!!", data:{events: eventList}});
        
