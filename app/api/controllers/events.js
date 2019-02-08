@@ -41,7 +41,7 @@ if(err)
  },
 
 deleteById: function(req, res, next) {
-  eventModel.findByIdAndRemove(req.params.meventId, function(err, eventInfo){
+  eventModel.findByIdAndRemove(req.params.eventId, function(err, eventInfo){
    if(err)
     next(err);
    else {
